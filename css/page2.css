@@ -1,0 +1,42 @@
+body {
+  background-color: lightgreen;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 120%;
+}
+
+.flexcontainer {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: grey;
+}
+
+#box {
+  width: 10%;
+  height: 5%;
+  background-color: grey;
+}
+
+div {
+   border: 1px solid red;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+.flexcontainer button:hover {
+  background-color: pink;
+}
+.flexcontainer div:hover {
+  background-color: pink;
+}
+
+#photodev {
+  position: absolute;
+  left: 260px;
+}
