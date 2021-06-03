@@ -21,7 +21,7 @@ body {
 }
 
 div {
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 
 a {
@@ -31,4 +31,30 @@ a {
 
 .flexcontainer div:hover {
   background-color: pink;
+}
+
+img {
+  width: 100%;
+}
+
+#moth {
+  width:600px;
+  position: absolute;
+}
+
+#moon {
+
+  width:200px;
+  left:700px;
+  position: absolute;
+}
+
+#frog {
+  width:600px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+}
+#pentacle {
+  width:200px;
 }

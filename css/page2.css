@@ -21,7 +21,7 @@ body {
 }
 
 div {
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 
 a {
@@ -39,4 +39,22 @@ a {
 #photodev {
   position: absolute;
   left: 260px;
+  position: fixed;
+}
+
+img {
+  width: 100%;
+  width:300px;
+}
+#gallery {
+  display: flex;
+  width:1000px;
+  flex-wrap: wrap;
+  position: absolute;
+  left:400px;
+}
+.photobox {
+  width:300px;
+  padding:50px;
+
 }

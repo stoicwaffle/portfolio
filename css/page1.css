@@ -5,6 +5,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 120%;
+
 }
 
 .flexcontainer {
@@ -21,7 +22,7 @@ body {
 }
 
 div {
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 
 a {
@@ -32,3 +33,28 @@ a {
 .flexcontainer div:hover {
   background-color: pink;
 }
+
+.contentcontainer {
+  display: flex;
+  flex-direction: column;
+  width:800px;
+  position: absolute;
+  left:400px;
+
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+}
+
+#datazine {
+  width: 400px;
+}
+
+.contentbox {
+  margin: 20px;
+}
+
+#nickcavegif {
+  width:400px;
+}
+
+#more1,#more2, #more3 {display: none;}
