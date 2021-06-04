@@ -37,7 +37,7 @@ button2.addEventListener('click', function(){
      photocontainer.appendChild(photo)
      gallery.appendChild(photocontainer)
   }
-  for (i=1;i<25;i++) {
+  for (i=1;i<35;i++) {
     addphoto('random',i);
   }
 })

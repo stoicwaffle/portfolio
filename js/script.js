@@ -83,4 +83,4 @@ function openManyWindows(){
 }
 
 // on click, we open many windows.
-button.addEventListener("click", openManyWindows);
+// button.addEventListener("click", openManyWindows);

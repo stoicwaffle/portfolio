@@ -21,7 +21,7 @@ body {
 }
 
 div {
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 
 a {
@@ -30,5 +30,15 @@ a {
 }
 
 .flexcontainer div:hover {
-  background-color: pink;
+  background-color: #ff0055;
+}
+
+img {
+  width: 100%;
+}
+
+#dude {
+  position: absolute;
+  left:300px;
+  width:600px;
 }
