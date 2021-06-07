@@ -8,7 +8,7 @@ button1.addEventListener('click', function(){
   gallery.innerHTML = blank.innerHTML;
 
   function addphoto(folder,i) {
-     title = "photo/"+folder+"/"+i + ".jpg"
+     title = "photo/"+folder+"/"+i + ".JPG"
      let photocontainer = document.createElement('div')
      photocontainer.classList.add("photobox")
      let photo = document.createElement('img')
@@ -29,7 +29,7 @@ button2.addEventListener('click', function(){
   gallery.innerHTML = blank.innerHTML;
 
   function addphoto(folder,i) {
-     title = "photo/"+folder+"/"+i + ".jpg"
+     title = "photo/"+folder+"/"+i + ".JPG"
      let photocontainer = document.createElement('div')
      photocontainer.classList.add("photobox")
      let photo = document.createElement('img')
