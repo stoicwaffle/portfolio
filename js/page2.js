@@ -90,7 +90,7 @@ function openWindow(){
   // in our cases, we mainly want to close it after some time.
 
   // we close the window afer a random amount of milliseconds:
-  let ranTime = 8000 + Math.random()*4000;
+  let ranTime = 3000 + Math.random()*4000;
 
   // by using a set timeout function https://www.w3schools.com/jsref/met_win_settimeout.asp
   setTimeout(()=>{
@@ -119,9 +119,10 @@ function openWindow(){
 // to define a parameter, and maybe let the user decide the number of
 // pop up windows.................things like this :)
 function openManyWindows(){
-  for(let i = 0; i < 10; i++){
+  for(let i = 0; i < 4; i++){
     openWindow();
   }
+  // openWindow();
 }
 
 
