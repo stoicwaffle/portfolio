@@ -132,7 +132,7 @@ button.addEventListener("click", openManyWindows);
 
 function randompic() {
     let num = randomIntFromInterval(1,20);
-    picname =  "balloons/"+num+".jpg"
+    picname =  "balloons/"+num+".JPG"
     // picname =  folder+"/"+num+".jpg"
     localStorage.setItem('smallwindow', picname);
 }
