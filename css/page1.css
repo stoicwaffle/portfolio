@@ -88,8 +88,11 @@ a {
   width:100%;
 }
 
-#more1,#more2, #more3 {display: none;}
+#more1,#more2, #more3, #more4{display: none;}
 
+.flyer {
+  width:100%;
+}
 
 .contentcontainer button {
   display: inline-block;
