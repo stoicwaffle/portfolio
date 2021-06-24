@@ -39,6 +39,18 @@ a {
 }
 
 /*/////////////////////////////////////*/
+input {
+  display: inline-block;
+  background-color: grey; /* Green */
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+input:hover {
+  background-color: #ff0055;
+  color:#ff0055;
+}
+/*///////////////////////////*/
 img {
   width: 100%;
 }
@@ -81,9 +93,9 @@ img {
   z-index: -100;
 }
 
-/* #pinkblock:hover {
+#pinkblock:hover {
   background-color: #ff0055;
-} */
+}
 
 
 #dude {
