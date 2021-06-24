@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   text-align: left;
@@ -5,6 +9,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 120%;
+  overflow-x: scroll;
 }
 
 
@@ -17,10 +22,11 @@ body {
 .box {
   width: 100%;
   height: 3%;
-  margin: 1px;
+  margin: 2px;
 }
-span {
+.flexcontainer span {
   background-color: grey;
+  padding: 1px;
 }
 
 div {
@@ -41,9 +47,9 @@ a {
 
 
 /*////////////////////////////////////////*/
-.flexcontainer button {
+/* .flexcontainer button {
   display: inline-block;
-  background-color: grey; /* Green */
+  background-color: grey;
   border: none;
   color: black;
   cursor: pointer;
@@ -51,7 +57,7 @@ a {
 .flexcontainer button:hover {
   background-color: #ff0055;
   color:#ff0055;
-}
+} */
 
 #photodev {
   position: absolute;
@@ -60,23 +66,83 @@ a {
 }
 
 img {
-  width: 100%;
-  width:300px;
+  /* width: 100%; */
+  height:100%;
+
+  /* max-height: 100vh; */
+  /* height: auto; */
+  /* width:300px; */
 }
+
 #gallery {
   display: flex;
-  width:1000px;
-  flex-wrap: wrap;
+  flex-direction: row;
+  /* width:1000px; */
+  flex-wrap: nowrap; /*multiplt rows*/
+
   position: absolute;
   left:400px;
+  top:150px;
+  justify-content: center;
+  pointer-events: none;
 }
+
 .photobox {
-  width:300px;
+  /* width:300px; */
+  height: 400px;
   padding:50px;
 
 }
 
+/* #gallery img:hover {
+  width:600px;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+} */
+#window {
+  position: fixed;
+}
 #button {
   position: absolute;
-  left:800px;
+  left:200px;
+}
+
+button {
+  display: inline-block;
+  background-color: grey; /* Green */
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff0055;
+  color:#ff0055;
+}
+/* .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.selectEnable {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }

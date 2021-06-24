@@ -16,10 +16,11 @@ body {
 .box {
   width: 100%;
   height: 3%;
-  margin: 1px;
+  margin: 2px;
 }
-span {
+.flexcontainer span {
   background-color: grey;
+  padding: 1px;
 }
 
 div {
@@ -40,11 +41,34 @@ a {
 /*/////////////////////////////////////////////////////*/
 img {
   width: 100%;
+
 }
 
 #dude {
   position: absolute;
-  left:300px;
+  left:400px;
   width:590px;
   top:-100px;
+  z-index: -1;
+}
+
+#about {
+  position: absolute;
+  left:400px;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.selectEnable {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }

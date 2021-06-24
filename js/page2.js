@@ -2,25 +2,60 @@
 let button1 = document.getElementById('button1')
 let gallery = document.getElementById('gallery')
 let button2= document.getElementById('button2')
+let button3= document.getElementById('button3')
+let many = 4;
+let windowcontainer = document.getElementById('window')
+//
+// lozad('.lozad', {
+//     load: function(el) {
+//         el.src = el.dataset.src;
+//         el.onload = function() {
+//             el.classList.add('fade')
+//         }
+//     }
+// }).observe()
+function addphoto(folder,i) {
+   title = "photo/"+folder+"/"+i + ".JPG"
+   let photocontainer = document.createElement('div')
+   photocontainer.classList.add("photobox")
+   let photo = document.createElement('img')
+   photo.src = title
 
+   photo.class = "lozad"
+
+   photocontainer.appendChild(photo)
+   gallery.appendChild(photocontainer)
+
+   // var position = $(photo).offset().left;
+   // console.log(position  )
+
+}
 button1.addEventListener('click', function(){
   let blank = document.createElement('div');
   gallery.innerHTML = blank.innerHTML;
 
-  function addphoto(folder,i) {
-     title = "photo/"+folder+"/"+i + ".JPG"
-     let photocontainer = document.createElement('div')
-     photocontainer.classList.add("photobox")
-     let photo = document.createElement('img')
-     photo.src = title
-     photocontainer.appendChild(photo)
-     gallery.appendChild(photocontainer)
-  }
+  // function addphoto(folder,i) {
+  //    title = "photo/"+folder+"/"+i + ".JPG"
+  //    let photocontainer = document.createElement('div')
+  //    photocontainer.classList.add("photobox")
+  //    let photo = document.createElement('img')
+  //    photo.src = title
+  //
+  //    photo.class = "lozad"
+  //
+  //    photocontainer.appendChild(photo)
+  //    gallery.appendChild(photocontainer)
+  //
+  //    // var position = $(photo).offset().left;
+  //    // console.log(position  )
+  //
+  // }
+
   for (i=1;i<21;i++) {
     addphoto('balloons',i);
   }
 
-
+  windowcontainer.innerHTML = blank.innerHTML;
 })
 
 button2.addEventListener('click', function(){
@@ -40,6 +75,45 @@ button2.addEventListener('click', function(){
   for (i=1;i<35;i++) {
     addphoto('random',i);
   }
+
+  let windowbutton = document.createElement('button');
+  windowcontainer.appendChild(windowbutton);
+  windowbutton.innerHTML = "Open a window";
+  windowbutton.id = "button";
+
+
+  // on click, we open many windows.
+  windowbutton.addEventListener("click", openManyWindows);
+  windowbutton.addEventListener("click", randompic);
+
+})
+
+button3.addEventListener('click', function(){
+  let blank = document.createElement('div');
+  gallery.innerHTML = blank.innerHTML;
+
+  function addphotovertical(folder,i) {
+     title = "photo/"+folder+"/"+i + ".JPG"
+     let photocontainer = document.createElement('div')
+     photocontainer.classList.add("photobox")
+     let photo = document.createElement('img')
+     photo.src = title
+     
+     // gallery.style.flexDirection = "column";
+
+     photocontainer.appendChild(photo)
+     gallery.appendChild(photocontainer)
+
+     // var position = $(photo).offset().left;
+     // console.log(position  )
+
+  }
+
+  for (i=1;i<21;i++) {
+    addphotovertical('things',i);
+  }
+
+  windowcontainer.innerHTML = blank.innerHTML;
 })
 ////////////////////////////////////////////
 let sw = screen.width;
@@ -90,7 +164,7 @@ function openWindow(){
   // in our cases, we mainly want to close it after some time.
 
   // we close the window afer a random amount of milliseconds:
-  let ranTime = 3000 + Math.random()*4000;
+  let ranTime = 3000 + Math.random()*1000;
 
   // by using a set timeout function https://www.w3schools.com/jsref/met_win_settimeout.asp
   setTimeout(()=>{
@@ -119,23 +193,23 @@ function openWindow(){
 // to define a parameter, and maybe let the user decide the number of
 // pop up windows.................things like this :)
 function openManyWindows(){
-  for(let i = 0; i < 4; i++){
+  for(let i = 0; i < many; i++){
     openWindow();
   }
   // openWindow();
 }
 
-
-// on click, we open many windows.
-button.addEventListener("click", openManyWindows);
+// let button = document.getElementById('button');
+// // on click, we open many windows.
+// button.addEventListener("click", openManyWindows);
 
 
 function randompic() {
     let num = randomIntFromInterval(1,20);
-    picname =  "balloons/"+num+".JPG"
+    picname =  "random/"+num+".JPG"
     // picname =  folder+"/"+num+".jpg"
     localStorage.setItem('smallwindow', picname);
 }
 
 
-button.addEventListener("click", randompic);
+// button.addEventListener("click", randompic);

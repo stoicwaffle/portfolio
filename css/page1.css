@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: white;
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
@@ -17,10 +21,11 @@ body {
 .box {
   width: 100%;
   height: 3%;
-  margin: 1px;
+  margin:2px;
 }
-span {
+.flexcontainer span {
   background-color: grey;
+  padding: 1px;
 }
 div {
    /* border: 1px solid red; */
@@ -54,22 +59,33 @@ a {
 }
 .contentbox a:hover {
   color:#ff0055;
+  font-weight: bold;
 }
 
+.title {
+  font-weight: bold;
+}
 
 #datazine {
-  width: 600px;
+  width: 100%;
 }
-
+.title p {
+  /* background-color: ; */
+}
 .contentbox {
-  margin: 20px;
+  margin:20px;
+  padding: 10px;
+  /* background-color: #ff0055; */
 }
 
 #nickcavegif {
-  width:600px;
+  width:100%;
 }
 #manifesto {
-  width: 600px;
+  width: 100%;
+}
+#webcollagegif {
+  width:100%;
 }
 
 #more1,#more2, #more3 {display: none;}
@@ -85,4 +101,5 @@ a {
 }
 .contentcontainer button:hover {
   background-color: #ff0055;
+  color: #ff0055;
 }
