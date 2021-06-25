@@ -83,7 +83,7 @@ img {
   pointer-events: none;
 }
 
-#pinkblock {
+/* #pinkblock {
   position: absolute;
   background-color: grey;
   width:300px;
@@ -96,7 +96,7 @@ img {
 
 #pinkblock:hover {
   background-color: #ff0055;
-}
+} */
 
 
 #dude {
@@ -121,7 +121,7 @@ img {
     user-select: text;
 }
 #everything {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* position: absolute; */
   /* left:800px; */
   width:1300px;
