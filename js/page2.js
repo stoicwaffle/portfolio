@@ -98,7 +98,7 @@ button3.addEventListener('click', function(){
      photocontainer.classList.add("photobox")
      let photo = document.createElement('img')
      photo.src = title
-     
+
      // gallery.style.flexDirection = "column";
 
      photocontainer.appendChild(photo)
@@ -201,7 +201,7 @@ function openManyWindows(){
 
 // let button = document.getElementById('button');
 // // on click, we open many windows.
-// button.addEventListener("click", openManyWindows);
+button.addEventListener("click", openManyWindows);
 
 
 function randompic() {
@@ -212,4 +212,4 @@ function randompic() {
 }
 
 
-// button.addEventListener("click", randompic);
+button.addEventListener("click", randompic);
