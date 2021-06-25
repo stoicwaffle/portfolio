@@ -34,9 +34,13 @@ function resize() {
   ctx.canvas.height = window.innerHeight;
 }
 
+function randomnum(min, max) { // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 
 function randomcolor() {
-    return "hsl(" + Math.random() * 360 + ",100%,50%)";
+    return "hsl(" + Math.random() * 360 + "," + randomnum(30, 80)+ "%," + randomnum(50, 100)+ "%)";
     }
 
 

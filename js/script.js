@@ -72,7 +72,7 @@ function save() {
 // html2canvas(document.body).then(function(canvas) {
 //     document.querySelector("#capture").appendChild(canvas);
 // });
-html2canvas(document.body).then(function(canvas) {
+html2canvas(everything).then(function(canvas) {
     // Export the canvas to its data URI representation
     var base64image = canvas.toDataURL("image/png");
 

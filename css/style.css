@@ -5,6 +5,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 120%;
+
 }
 
 .flexcontainer {
@@ -118,4 +119,11 @@ img {
     -moz-user-select: text;
     -o-user-select: text;
     user-select: text;
+}
+#everything {
+  border: 1px solid red;
+  /* position: absolute; */
+  /* left:800px; */
+  width:1300px;
+  height:600px;
 }
