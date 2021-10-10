@@ -34,22 +34,6 @@ button1.addEventListener('click', function(){
   let blank = document.createElement('div');
   gallery.innerHTML = blank.innerHTML;
 
-  // function addphoto(folder,i) {
-  //    title = "photo/"+folder+"/"+i + ".JPG"
-  //    let photocontainer = document.createElement('div')
-  //    photocontainer.classList.add("photobox")
-  //    let photo = document.createElement('img')
-  //    photo.src = title
-  //
-  //    photo.class = "lozad"
-  //
-  //    photocontainer.appendChild(photo)
-  //    gallery.appendChild(photocontainer)
-  //
-  //    // var position = $(photo).offset().left;
-  //    // console.log(position  )
-  //
-  // }
 
   for (i=1;i<21;i++) {
     addphoto('balloons',i);
@@ -106,7 +90,6 @@ button3.addEventListener('click', function(){
 
      // var position = $(photo).offset().left;
      // console.log(position  )
-
 
   }
 
@@ -200,9 +183,9 @@ function openManyWindows(){
   // openWindow();
 }
 
-let button = document.getElementById('button');
+// let button = document.getElementById('button');
 // // on click, we open many windows.
-button.addEventListener("click", openManyWindows);
+// document.getElementById('button').addEventListener("click", openManyWindows);
 
 
 function randompic() {
@@ -213,4 +196,4 @@ function randompic() {
 }
 
 
-button.addEventListener("click", randompic);
+// document.getElementById('button').addEventListener("click", randompic);
