@@ -92,7 +92,21 @@ img {
   height: 400px;
   padding:50px;
 
+  /* animation:fadein 1s ease 0.5s forwards; */
 }
+
+.photobox img {
+  opacity:0;
+}
+
+/* @keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+} */
 
 /* #gallery img:hover {
   width:600px;

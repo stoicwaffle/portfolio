@@ -21,7 +21,7 @@ function addphoto(folder,i) {
    let photo = document.createElement('img')
    photo.src = title
 
-   photo.class = "lozad"
+   // photo.class = "lozad"
 
    photocontainer.appendChild(photo)
    gallery.appendChild(photocontainer)
@@ -106,6 +106,7 @@ button3.addEventListener('click', function(){
 
      // var position = $(photo).offset().left;
      // console.log(position  )
+
 
   }
 
@@ -199,7 +200,7 @@ function openManyWindows(){
   // openWindow();
 }
 
-// let button = document.getElementById('button');
+let button = document.getElementById('button');
 // // on click, we open many windows.
 button.addEventListener("click", openManyWindows);
 
