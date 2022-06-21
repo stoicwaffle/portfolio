@@ -1,11 +1,17 @@
 body {
   background-color: white;
+
+  background-image: url('bg.png');
+  background-size: 100% 120%;
+  background-attachment: fixed;
+
   text-align: left;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   font-size: 120%;
 
+  overflow: hidden;
 }
 
 .flexcontainer {
@@ -67,8 +73,8 @@ img {
 #moon {
 
   width:200px;
-  left:900px;
-  top:130px;
+  left:940px;
+  top:70px;
   position: absolute;
   z-index: -4;
   pointer-events: none;
@@ -83,6 +89,13 @@ img {
   pointer-events: none;
 }
 
+#guy {
+  position: absolute;
+}
+
+#hand {
+  position: absolute;
+}
 /* #pinkblock {
   position: absolute;
   background-color: grey;

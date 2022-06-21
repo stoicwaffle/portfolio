@@ -2,7 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  color: lightgrey;
   background-color: white;
+  background-image: url('bg.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* text-align: left; */
   text-align: justify;
   margin-top: 5%;
@@ -52,9 +57,12 @@ a {
 
   text-align: left;
   font-family: 'Roboto Slab', serif;
+
+
 }
 
 .contentbox a{
+  color: lightgrey;
   text-decoration: underline;
 }
 .contentbox a:hover {
@@ -88,7 +96,7 @@ a {
   width:100%;
 }
 
-#more1,#more2, #more3, #more4{display: none;}
+#more1,#more2, #more3, #more4, #more5{display: none;}
 
 .flyer {
   width:100%;
